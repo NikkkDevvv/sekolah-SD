@@ -471,3 +471,21 @@ a:focus {
   margin-top: -90px;
 }
 /* end footer section*/
+
+/* Efek Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efek Zoom pada Kartu Guru */
+.teacher_section .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
